@@ -3,6 +3,8 @@ package com.raj.spring;
 public class BaseballCoach implements Coach{
 	
 	private FortuneService fortuneService;
+	private String teamName;
+	private String emailID;
 	
 	public BaseballCoach(FortuneService theFortuneService) {
 		super();
@@ -23,6 +25,24 @@ public class BaseballCoach implements Coach{
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
 		return this.fortuneService.getFortune();
+	}
+
+	@Override
+	public void setFortuneService(FortuneService theFortuneService) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getEmailID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getTeamName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

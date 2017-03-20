@@ -24,4 +24,22 @@ public class SoccerCoach implements Coach{
 		return this.fortuneService.getFortune();
 	}
 
+	@Override
+	public void setFortuneService(FortuneService theFortuneService) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getEmailID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getTeamName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
