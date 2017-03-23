@@ -6,11 +6,24 @@ public class CricketCoach implements Coach{
 	private String teamName;
 	private String emailID;
 	
+	public CricketCoach() {
+		System.out.println("Inside No Arg Constructor");
+	}
+	
+	/**
+	 * @param fortuneService
+	 */
+	public CricketCoach(FortuneService theFortuneService) {
+		super();
+		this.fortuneService = theFortuneService;
+	}
+
 	public String getTeamName() {
 		return teamName;
 	}
 
 	public void setTeamName(String teamName) {
+		System.out.println("Inside setTeamName Service");
 		this.teamName = teamName;
 	}
 
@@ -19,16 +32,9 @@ public class CricketCoach implements Coach{
 	}
 
 	public void setEmailID(String emailID) {
+		System.out.println("Inside setEmailID Service");
 		this.emailID = emailID;
 	}
-
-	/**
-	 * @param fortuneService
-	 */
-//	public CricketCoach(FortuneService theFortuneService) {
-//		super();
-//		this.fortuneService = theFortuneService;
-//	}
 
 	@Override
 	public String getWorkoutInfo() {
@@ -44,7 +50,7 @@ public class CricketCoach implements Coach{
 
 	@Override
 	public void setFortuneService(FortuneService theFortuneService) {
-		// TODO Auto-generated method stub
+		System.out.println("Inside SetFortune Service");
 		this.fortuneService = theFortuneService;
 	}
 
