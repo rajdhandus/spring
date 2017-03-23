@@ -8,7 +8,8 @@
 	   					   http://www.springframework.org/schema/context/spring-context.xsd">
 	   					   
 
-	<context:property-placeholder location="classpath:sport.properties"/>	
+	<context:property-placeholder location="classpath:sport.properties"/>
+		
 	<bean id="myFortune"
 		  class="com.raj.spring.RandomFortuneService">
 	</bean>
