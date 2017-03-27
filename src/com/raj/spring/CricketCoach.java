@@ -53,5 +53,13 @@ public class CricketCoach implements Coach{
 		System.out.println("Inside SetFortune Service");
 		this.fortuneService = theFortuneService;
 	}
+	
+	public void doAtTheBeginning(){
+		System.out.println("Inside the method - doAtTheBeginning");
+	}
+	
+	public void doAtTheEnd(){
+		System.out.println("Inside the method - doAtTheEnd");
+	}
 
 }
