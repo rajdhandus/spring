@@ -55,10 +55,13 @@ public class CricketCoach implements Coach{
 	}
 	
 	public void doAtTheBeginning(){
+		// init-method for beans should be public, void and shoud not have any arguments
 		System.out.println("Inside the method - doAtTheBeginning");
 	}
 	
 	public void doAtTheEnd(){
+		// destroy-method for beans should be public, void and shoud not have any arguments
+
 		System.out.println("Inside the method - doAtTheEnd");
 	}
 

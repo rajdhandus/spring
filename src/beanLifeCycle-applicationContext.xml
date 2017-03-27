@@ -13,7 +13,8 @@
 	
     <bean id="myCoach"
           class="com.raj.spring.CricketCoach"
-          scope="prototype">
+          init-method="doAtTheBeginning"
+          destroy-method="doAtTheEnd">
           <constructor-arg ref="myFortune"/>
           
     </bean>
